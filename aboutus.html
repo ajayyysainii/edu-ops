@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- ----favicon---- -->
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+     <!-- _______font____ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="start-header"><a href="index.html"><img class="logo" src="images/logo.png" alt=""></a></div>
+
+        <div class="mid-header"><input class="search-box" placeholder="Search Courses" type="search"></div>
+
+        <div class="last-header">
+            <div class="navg"><a href="index.html">Home</a></div>
+            <div class="navg"> <a href="cons.html"> Counselling</a> </div>
+            <div class="navg"> <a href="courses.html"> Courses</a></div>
+            <div class="navg">
+                <button class="button-64" role="button"><span class="text">Sign Up</span></button>
+            </div>
+        </div>
+    </header>
+
+    <center>
+
+    <main>
+
+        <div> <a href="index.html"> <h1>Welcome to Edu-ops!
+        </h1></a></div>
+
+        <div><p>At Edu-ops, we are dedicated to helping you find your true passion and making the most of your educational investments. Our innovative platform offers two key services: personalised counselling by our smart bot to help you discover your field of interest, and a marketplace where you can resell courses at a lower price if you no longer need them.
+        </p></div>
+
+        <div> <a href="cons.html"> <h1>Discover Your Passion
+        </h1></a></div>
+        <div><p>Our intelligent bot guides you through a series of tailored questions to understand your interests, strengths, and career aspirations. By analyzing your responses, the bot helps identify the fields that align best with your goals, ensuring you make informed decisions about your education and future career.
+        </p></div>
+        <div> <a href="courses.html"><h1>Resell Unused Courses
+        </h1></a> </div>
+        <div><p>We understand that sometimes circumstances change, and you might lose interest in a course you previously purchased. Our platform allows you to resell these courses at a lower price, giving someone else the opportunity to benefit from them. This not only helps you recoup some of your investment but also promotes a sustainable approach to education.
+
+        </p></div>
+        <div><p>Thank you for choosing Edu-ops as your partner in learning and growth. <br>
+
+            Warm regards,
+            <br>
+            The Edu-ops Team</p></div>
+
+    </main>
+</center>
+
+
+
+
+    <footer class="footer">
+        <div><img class="footer-logo" src="images/logo.png" alt=""></div>
+        <div class="socialmedia">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div>
+            <ul class="footer-nav">
+                <LI><a href="index.html"> Home</a></LI>
+                <LI> <a href="courses.html"> Courses</a></LI>
+                <LI> <a href="cons.html"> Counselling</a></LI>
+                <LI> <a href="aboutus.html"> About Us</a></LI>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "d841c60f-9e25-4e9d-b5d8-f4190e0b245f",
+            apiHost: "https://flowise-1-92y0.onrender.com",
+            chatflowConfig: {
+                // topK: 2
+            },
+            theme: {
+                button: {
+                    backgroundColor: "#fffff",
+                    right: 20,
+                    bottom: 20,
+                    size: "large",
+                    dragAndDrop: true,
+                    iconColor: "#343a40",
+                    customIconSrc: "https://img.icons8.com/?size=100&id=b2rw9AoJdaQb&format=png&color=000000",
+                },
+                tooltip: {
+                    showTooltip: true,
+                    tooltipMessage: 'Hi There 👋!',
+                    tooltipBackgroundColor: 'black',
+                    tooltipTextColor: 'white',
+                    tooltipFontSize: 17,
+                },
+                chatWindow: {
+                    showTitle: true,
+                    title: 'Samiksha Here',
+                    titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                    welcomeMessage: 'Hello! Welcome to Edu-ops. How may I help you?',
+                    errorMessage: 'This is a custom error message',
+                    backgroundColor: "#ffffff",
+                    height: 500,
+                    width: 400,
+                    fontSize: 17,
+                    poweredByTextColor: "#303235",
+                   
+                    botMessage: {
+                        backgroundColor: "#f7f8ff",
+                        textColor: "#223843",
+                        showAvatar: true,
+                        avatarSrc: "https://img.icons8.com/?size=100&id=5hBRD915I8GE&format=png&color=000000",
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "#ffffff",
+                        showAvatar: true,
+                        avatarSrc: "https://img.icons8.com/?size=100&id=qZ3IKpKF9Cun&format=png&color=000000",
+                    },
+                    textInput: {
+                        placeholder: 'Enter Your Query',
+                        backgroundColor: '#fefcfb',
+                        textColor: '#463f3a5',
+                        sendButtonColor: '#274c77',
+                        maxChars: 100,
+                        maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 100 characters.',
+                        autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                    },
+                    feedback: {
+                        color: '#303235',
+                    },
+                    footer: {
+                        textColor: '#303235',
+                        text: 'Powered by',
+                        company: 'Edu-ops',
+                        companyLink: 'https://flowiseai.com',
+                    }
+                }
+            }
+        })
+    </script>
+
+
+    
+</body>
+</html>

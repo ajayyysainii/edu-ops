@@ -1,0 +1,42 @@
+*{
+    font-family: 'League Spartan';
+}
+
+.footer{
+    margin-top: 70px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 4px 0px inset;
+
+}
+
+.footer a::after,.footer a:active{
+    font-weight: bold;
+}
+
+.footer-logo{
+    width: 250px;
+}
+
+.socialmedia{
+    display: flex;
+    column-gap: 20px
+    
+}
+
+.socialmedia i{
+    cursor: pointer;
+
+    width: 100%;
+}
+.footer-nav li{
+    font-size: 20px;
+    list-style: none;
+    line-height: 30px;
+}
